@@ -23,7 +23,7 @@ body {
 
 header {
   grid-area: header;
-  background:  #e9eeee;
+  background:  #ffffff;
   color: black;
   padding: 20px;
   text-align: center;
@@ -101,7 +101,7 @@ footer {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
-  background: #e9eeee;
+  background: #fdfdfd;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -130,7 +130,7 @@ footer {
 
 /* Info Boxes */
 .info-box {
-  background: #e9eeee;
+  background: #fdfdfd;
   border: 2px solid #000;
   border-radius: 8px;
   padding: 25px;
@@ -167,7 +167,7 @@ footer {
 
 /* Section Styles */
 .cv-page section {
-  background: #e9eeee;
+  background: #fdfdfd;
   border: 2px solid #000;
   border-radius: 10px;
   padding: 30px;
@@ -228,8 +228,6 @@ footer {
     font-size: 1.3rem;
   }
 }
-
-
 
 
 
@@ -307,14 +305,8 @@ footer {
 
 
 
-
-
-
-
-
-
 /* 
-   Portfolio Page Projects
+   Portfolio Page 
 */
 
 
@@ -324,7 +316,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  background : #e9eeee;
+  background : #fdfdfd;
   border: 2px solid #000;
   border-radius: 10px;
   padding: 20px;
@@ -370,6 +362,93 @@ footer {
   }
 
   .project-description {
+    text-align: center;
+  }
+}
+
+
+/* 
+   Welcome Page 
+ */
+
+
+.welcome {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Links as Buttons */
+.welcome-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #000;          
+  color: #fff;          
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover Effect For Buttons */
+.btn:hover {
+  background: #000;
+  color: #287a75;
+  border: 2px solid #000;
+  transform: scale(1.10);
+}
+
+/* Welcome Container Styles */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 25px 15px;
+    margin: 30px 10px;
+  }
+
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 80%;
     text-align: center;
   }
 }
