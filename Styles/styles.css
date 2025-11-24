@@ -1,0 +1,473 @@
+/* Style For All*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #287a75;
+  color: #222;
+}
+
+/* Grid Structure */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Styles For Header */
+
+header {
+  grid-area: header;
+  background:  #ffffff;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px (0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .subtitle {
+  font-size: 1rem;
+  color: #485553;
+  margin-top: 5px;
+}
+
+/* Navigation Bar Styles */
+
+nav {
+  grid-area: nav;
+  background: #000;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+/* When Button Hovered Styles */
+
+nav a:hover {
+  color:#287a75;
+  text-decoration: underline;
+}
+
+/* Main Styles */
+
+main {
+  grid-area: main;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Footer Styles */
+
+footer {
+  grid-area: footer;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+/*
+ About Me Page
+ */
+
+.about-container {
+  display: flex;
+  border: 2px solid #000;
+  flex-direction: column-reverse;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 2;
+}
+
+/* Styles For Photo Both For Position And Quaries */
+
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 3px solid #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+/* Info Boxes */
+.info-box {
+  background: #fdfdfd;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 6px;
+}
+
+.about-page main p {
+  border-bottom: 1px solid #000;
+  padding-bottom: 6px;
+  margin: 6px 0;
+}
+
+/* 
+   CV Page
+ */
+
+.cv-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;       
+  gap: 30px;            
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  padding-inline: 16px;
+}
+
+/* Section Styles */
+.cv-page section {
+  background: #fdfdfd;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px auto;            
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  overflow: hidden;              
+  
+}
+
+
+.cv-page section:first-of-type {
+  margin-top: 60px;    
+}
+
+/* Section Titles Styles */
+.cv-page section h2,
+.cv-page section h3 {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+/* Paragraphs Styles */
+.cv-page section p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Lists Styles */
+.cv-page section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.cv-page section li {
+  margin: 6px 0;
+}
+
+/* Highlight For Bold Styles */
+.cv-page section strong {
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-page section {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .cv-page section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+    justify-content: center;  
+  }
+}
+
+
+
+/*
+   PORTFOLIO PAGE
+ */
+
+.portfolio-page section {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive With Quaries */
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+
+
+
+  /* Photo Styles */
+  }
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 400px;             
+  border-radius: 10px;
+  border: 3px solid #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+  transition: all 0.3s ease;     
+}
+
+/*  Media Queries For Photo  */
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .about-photo img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-photo img {
+    max-width: 350px;
+  }
+}
+
+
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1000px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* Portfolio Page Container */
+
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background : #fdfdfd;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 1000px;  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Image On The One Side */
+.project-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+/* Description Of The Image Styles */
+.project-description {
+  flex: 1;
+  text-align: left;
+}
+
+/* Headings Inside Description */
+.project-description h2 {
+  margin-top: 0;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-image img {
+    max-width: 90%;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+}
+
+
+/*
+  Welcome Page
+*/
+
+/* Container  Styles */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.welcome {
+  text-align: center;
+  max-width: 700px;
+}
+
+/* Heading */
+.welcome h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Text */
+.welcome p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Container For Buttons */
+.welcome-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #000;          
+  color: #fff;             
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover Styles */
+.btn:hover {
+  background: #000;
+  color:  #287a75;
+  transform: scale(1.05);
+}
+
+/* Responsive Design With Quaries */ 
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 25px 15px;
+    margin: 30px 10px;
+  }
+
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .welcome {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+
