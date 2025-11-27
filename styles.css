@@ -285,12 +285,6 @@ footer {
   }
 }
 
-@media (min-width: 1025px) {
-  .about-photo img {
-    max-width: 450px;
-  }
-}
-
 }
 
 @media (min-width: 1024px) {
